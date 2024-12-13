@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 1%;
+    background-color: aqua;
+}
+
+*::first-letter {
+    text-transform: uppercase;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: aqua;
+    box-shadow: 1px 3px 15px 1px red;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    width: 80%;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: crimson;
+}
+
+.nav {
+    width: 60%;
+}
+
+a:hover {
+    color: black;
+}
+
+.image {
+    width: 40%;
+}
+
+#sign {
+    background-color: grey;
+    padding: 15px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+#sign:hover {
+    background-color: black;
+    color: crimson;
+}
+
+#s {
+    width: 300px;
+    height: 120px;
+}
+
+.r {
+    background-color: red;
+}
+
+.s {
+
+    background-color: silver;
+}
+
+.t {
+    background-color: tan
+}
+
+.u {
+    background-color: violet
+}
+
+.home {
+    display: grid;
+    margin-top: 100px;
+    width: 30px;
+    grid-template-areas: "r s t u";
+    grid-gap: 20px;
+}
+
+#s {
+    height: 80px;
+    display: grid;
+
+}
+.home :hover{
+    color: black;
+    background-color: green;
+}

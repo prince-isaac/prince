@@ -1,0 +1,1162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  background: #fff;
+}
+.prince{
+  display: flex;
+  gap: 20px;
+}
+header {
+  display: flex;
+  align-items: center;
+  background: #F9F7F0;
+  width: 100%;
+  position: fixed;
+  padding: 15px 100px;
+  justify-content: space-between;
+  transition: 1s;
+}
+.logo {
+  flex: 1; 
+  margin: 0 4px;
+}
+nav{
+  flex: 2;
+  margin-left: 100px;
+}
+nav ul {
+  margin-right: 100px;
+  list-style-type: none;
+  font-size: 1.0rem;
+  padding: 0; 
+  justify-content: flex-start; 
+}
+nav ul li {
+  padding-top: 10px;
+  display: flex;
+  max-height: 60vh;
+  text-align: center;
+  height: 1vh;
+  align-items: center; 
+}
+ul img {
+  width: 20%;
+}
+.header{
+  display: none;
+}
+
+
+nav ul li a {
+  display: flex;
+  align-items: center; 
+  padding: 5px 10px; 
+  text-decoration: none;
+  color: black; 
+}
+#menuItem{
+  display: flex;
+  max-width: 100%;
+  height: 160px;
+  max-height: 200px;
+  gap: 10px;
+  
+}
+.hero-section {
+  justify-content: center; 
+  width: 100%;
+  align-items: center;
+  text-align: center; 
+  background: #F9F7F0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 140vh;
+  padding: 20px; 
+  margin-bottom: 20rem;
+}
+.hero-section h1{
+  font-size: 3rem;
+  font-weight: 800;
+}
+.hero-section p{
+  font-size: 1.7rem;
+}
+.sense{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-right: 5%;
+}
+#btn{
+  background: #F9F7F0;
+  border: 1px solid black;
+  color: #000000;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size :1.0em;
+  transition: 0.8s ;
+}
+#btn:hover{
+  background: #000000;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+#btn-2{
+  background: #000000;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size :1.0em;
+  transition: 0.8s ease;
+}
+#btn-2:hover{
+  background: #fff;
+  border: 1px solid black;
+  color: #000000;
+}
+.menu-icon{
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+.hamburger {
+  display: none; 
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  height: 4px;
+  width: 25px;
+  background-color: black;
+  margin: 3px 0;
+}
+
+.button-container {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+
+.form {
+  display: flex; /
+}
+
+.input-box {
+  width: 20rem;
+}
+
+.input-box input[type="email"] {
+  padding: 15px 20px;
+  border: 2px solid #000000;
+  border-radius: 0;
+  width: 100%;
+  font-size: 15px;
+}
+
+button[type="submit"] {
+  padding: 10px 25px;
+  color: #000000;
+  background-color: #FFF382;
+  font-family: "AvenirNext", "Lato", "Hirago KakuGothic ProN", Meiryo, sans-serif;
+  border-radius: 0; /* No rounding */
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  border: 1px solid #000000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #FFE600;
+}
+.banner{
+ width: 100%;
+}
+.banner img{
+  border-radius: 20px;
+}
+
+.slider {
+  overflow: hidden; /* Hide overflow */
+  width: 100%; 
+  position: relative; 
+}
+
+.images {
+  display: flex; /* Flex container for images */
+  transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.images > div {
+  min-width: 100%; /* Each image container takes full width */
+}
+
+.images img {
+  width: 10%; /* Responsive images */
+  height: auto; 
+}
+
+
+
+@media (max-width: 768px) {
+  .header {
+    display: block;
+    width: 100%;
+     flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0px;
+      color: white;
+      
+  }
+  header{
+    display: none;
+  }
+  
+
+  nav ul {
+      max-height: 0; 
+      overflow: hidden; 
+      transition: max-height 0.3s ease; 
+      display: flex;
+      flex-direction: column; 
+      width: 90%;
+      height: 500px;
+      background-color: #fff;
+  }
+  nav ul li {
+    padding: 0;
+    display: flex;
+    max-height: 60vh;
+    text-align: center;
+    height: 15vh;
+    align-items: center; 
+    border-bottom: 1px solid #000000;
+    transition: background 0.3s; 
+  }
+  ul img {
+    width: 10%;
+    margin-left: 15rem;
+  }
+  .hamburger {
+      display: grid; 
+      cursor: pointer; 
+      margin: 10px 0; 
+  }
+
+  .bar {
+      height: 4px;
+      width: 25px;
+      background-color: black;
+      margin: 3px 0; 
+  }
+  #menuItems{
+    height: 100vh;
+  }
+
+  .menu-icon {
+      display: none; 
+  }
+  .hero-section h1 {
+    font-size: 2.5rem; 
+}
+
+.hero-section p {
+    font-size: 1.2rem; 
+}
+
+.input-box {
+    width: 100%; 
+}
+button[type="submit"]{
+  width: 100%;
+}
+
+.form {
+  width: 100%;
+    flex-direction:column;
+    gap: 10px; 
+}
+.banner{
+  width: 100%;
+}
+.banner img{
+  width: 100%;
+}
+
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+      padding: 10px 10px;
+      width: 100%; 
+  }
+
+  nav ul {
+      font-size: 1.1rem; /* Slightly larger font size */
+  }
+
+  .hero-section h1 {
+      font-size: 2.8rem; /* Adjust font size */
+  }
+
+  .hero-section p {
+      font-size: 1.5rem; /* Adjust paragraph size */
+  }
+
+  .input-box {
+      width: 40%; /* Wider input box on tablets */
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+  header {
+      padding: 10px 15px;
+  }
+
+  nav ul {
+      font-size: 1rem; /* Default font size */
+  }
+
+  .hero-section h1 {
+      font-size: 3rem; /* Default h1 size */
+  }
+
+  .hero-section p {
+      font-size: 1.7rem; /* Default paragraph size */
+  }
+
+  .input-box {
+      width: 20rem; /* Default width for input box */
+  }
+
+  .button-container {
+      flex-direction: row;
+  }
+}
+
+
+
+
+
+/* Main wrapper for the slider */
+.slider {
+  width: 100%;
+  overflow: hidden;   
+  position: relative;
+}
+
+/* Container holding both image sets */
+.images {
+  display: flex;  
+  animation: marquee 10s linear infinite; 
+}
+
+/* Each set of images will stay in one row */
+.image-set {
+  display: flex;        
+  align-items: center;
+}
+
+/* Prevent images from shrinking */
+.image-set .images-1,
+.image-set .images-2,
+.image-set .images-3,
+.image-set .images-4,
+.image-set .images-5,
+.image-set .images-6,
+.image-set .images-7,
+.image-set .images-8,
+.image-set .images-9,
+.image-set .images-10,
+.image-set .images-11,
+.image-set .images-12,
+.image-set .images-13 {
+  flex-shrink: 0;       /* Prevent shrinking of images */
+  margin-right: 100px;   /* Space between images */
+}
+
+/* Image styling */
+.image-set img {
+  width: 150px;   /* Adjust the size of the images */
+  height: auto;   /* Maintain aspect ratio */
+}
+
+/* Define the continuous scrolling animation */
+@keyframes marquee {
+  0% {
+      transform: translateX(0); 
+      transform-style: preserve-3d;
+      will-change: transform;
+  }
+  100% {
+      transform: translateX(-100%); /* Move the images left */
+  }
+}
+.section-3{
+        margin-top: 30px;
+        gap: 8rem;
+        width: 100%;
+        display: flex;         
+     } 
+     .sect{
+      margin-top: 15rem;
+      width: 50%;
+    background: #F2EEE0;
+     }
+     .sec-3{
+        width: 40%;
+        margin-top: 15rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-left: 50px;
+
+     }
+
+     .sec-3 h1{
+        line-height: 2.8rem;
+        font-family: Maison Neue Extended, sans-serif;
+     }
+
+     .sec-3 p {
+        color: #1a1e22;
+        letter-spacing: 0;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-family: Ginto Normal,sans-serif;
+        font-size: 1.7rem;
+        
+        line-height: 140%;
+    }
+.anything{
+  border-radius: 15px;
+  background: #D7DCF9;
+  max-width: 100%;
+  width: 80%;
+  display: flex;
+
+
+}
+.whatever{
+  margin-top: 15rem;
+ width: 90%;
+}
+.whatever h3{
+  margin-left: 4rem;
+ font-size: 2rem;
+ font-weight: 900;
+}
+#btn{
+  background: transparent;
+  padding: 10px 20px;
+  margin-left: 4rem;
+}
+.maybe {
+  max-width: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+.maybe img{
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  max-width:90%;
+
+}
+
+
+/* Media Query for screens with max-width of 760px */
+@media (max-width: 760px) and (max-width: 1024px) {
+  /* Section 3 layout adjustments */
+  .section-3 {
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .sec-3 {
+    width: 90%;
+    margin-left: 0;
+    font-size: 1.2rem;
+    margin-top: 6rem;
+  }
+  .sect{
+    width: 100%;
+    background: #F2EEE0;
+  }
+
+  .sec-3 h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .sec-3 p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  /* Adjust 'anything' container */
+  .anything {
+    max-width: 100%;
+    width: 80%;
+    flex-direction: column;
+    padding: 1rem;
+    margin-left: 2.5rem;
+  }
+
+  /* Adjust 'whatever' section */
+  .whatever {
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  .whatever h3 {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+  
+
+
+  /* Button adjustments */
+  #btn {
+    padding: 8px 16px;
+    margin-left: 0;
+  }
+
+  /* Image adjustments */
+  .maybe img {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    max-width: 80%;
+  }
+
+  /* Slider animation and image size adjustments */
+  .slider .images {
+    animation: marquee 5s linear infinite;
+  }
+
+  .image-set img {
+    width: 120px;
+    margin-right: 50px;
+  }
+  body{
+    width: 100%;
+  }
+}
+.reviews {
+  background: #Ffffff;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center the content horizontally */
+  gap: 20px; /* Add space between items */
+  width: 100%; /* Full width */
+  height: auto; /* Let content define height */
+  padding: 20px 0; /* Padding for spacing */
+}
+
+/* Styling for individual review items */
+#s, .r, .s, .t {
+  background: #F9F7F0;
+  width: 90%; /* Make each item take 90% width */
+  height: auto; /* Adjust height based on content */
+  padding: 15px;
+  margin-bottom: 20px; /* Space between items */
+  text-align: center; /* Center content */
+  border-radius: 10px; /* Optional: add border radius for rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add subtle shadow */
+}
+.t img{
+  width: 100%;
+  height: 33vh;
+}
+.t a{
+  text-decoration: none;
+  color: #1A1E22;
+}
+.r a{
+  text-decoration: none;
+  color: #1a1e22;
+}
+.s a{
+  text-decoration: none;
+  color: #1A1E22;
+}
+.reviews :hover{
+    color: black;
+    background-color: #F9F7F0;
+}
+
+.customer h1{
+  margin-top: 100px;
+ text-align: center;
+ font-size: 2.5rem;
+ font-weight: bolder;
+}
+.tired{
+  width: 100%;
+  background: #FFF382;
+text-align: center;
+font-size: 1.3rem;
+font-weight: bolder;
+}
+.Get-demo{
+  background: black;
+  padding: 15px 35px;
+  font-size: 1.2rem;
+}
+.Get-demo a{
+  color: #fff;
+  text-decoration: none;
+}
+
+footer{
+  background:#1A1E22;
+padding-top: 80px;
+padding-left: 130px;
+padding-bottom: 60px;
+  display: flex;
+  color: #fff;
+}
+
+#non{
+  width: 100%;
+}
+#non img{
+ width: 50%;
+}
+.bolder{
+  margin-top: 8rem;
+  display: flex;
+  gap: 1rem;
+  width: 20%;
+}
+.bolder-2 {
+  width: 100%;
+}
+.let-me-sleep{
+  margin-top: 3rem;
+}
+.copywrite p{
+  display: flex;
+  font-size: 12px;
+  font-weight: 900;
+}
+.copywrite-2{
+  display: flex;
+  font-size: 12px;
+  font-weight: bolder;
+}
+.copywrite :hover{
+  text-decoration: underline;
+}
+.copywrite-2:hover{
+  text-decoration: underline;
+}
+#texts{
+  font-size: 12px;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+.why-attentive p:hover{
+ text-decoration: underline;
+}
+.products p:hover{
+  text-decoration: underline;
+}
+.Email p:hover{
+  text-decoration: underline;
+}
+.list-management p:hover{
+  text-decoration: underline
+}
+.solution p:hover{
+  text-decoration: underline
+}
+.BY-industries p:hover{
+  text-decoration: underline
+}
+.By-role p:hover{
+  text-decoration: underline;
+}
+.resources p:hover{
+  text-decoration: underline
+}
+.Company p:hover{
+ text-decoration: underline;
+}
+.partners p :hover{
+  text-decoration: underline
+}
+.developers p:hover{
+  text-decoration: underline
+}
+
+/* For small devices like phones (max-width: 576px) */
+@media (max-width: 576px) {
+  .hero-section h1 {
+    font-size: 2rem; 
+  }
+
+  .hero-section p {
+    font-size: 1.1rem; 
+  }
+
+  .input-box {
+    width: 100%; 
+  }
+
+  #btn,
+  #btn-2 {
+    width: 100%; 
+    padding: 10px;
+  }
+
+  .menu-icon {
+    display: block; 
+  }
+
+  nav ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+  }
+
+  nav ul li {
+    height: 10vh;
+    border-bottom: 1px solid #000;
+  }
+
+  .hero-section {
+    height: 120vh;
+    margin-bottom: 10rem;
+  }
+
+  .slider .images {
+    animation: marquee 7s linear infinite;
+  }
+
+  .image-set img {
+    width: 80px;
+    margin-right: 30px;
+  }
+
+  .section-3 {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .sect,
+  .sec-3 {
+    width: 90%;
+  }
+
+  .sec-3 h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .sec-3 p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .anything {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .whatever h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .copywrite p {
+    font-size: 10px;
+  }
+
+  .copywrite-2 {
+    font-size: 10px;
+  }
+
+  #non img {
+    width: 80%;
+  }
+}
+
+/* For larger phones and small tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1.3rem;
+  }
+
+  .input-box {
+    width: 100%; 
+  }
+
+  #btn,
+  #btn-2 {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .section-3 {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .reviews {
+    background: #F9F7F0;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack the items in a column */
+    align-items: center; /* Center the content horizontally */
+    gap: 20px; /* Add space between items */
+    width: 100%; /* Full width */
+    height: auto; /* Let content define height */
+    padding: 20px 0; /* Padding for spacing */
+  }
+
+  /* Styling for individual review items */
+  #s, .r, .s, .t {
+    background: #F9F7F0;
+    width: 90%; /* Make each item take 90% width */
+    height: auto; /* Adjust height based on content */
+    padding: 15px;
+    margin-bottom: 20px; /* Space between items */
+    text-align: center; /* Center content */
+    border-radius: 10px; /* Optional: add border radius for rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add subtle shadow */
+  }
+
+  /* Hover effect for items */
+  .reviews :hover {
+    color: black;
+    background-color: #F9F7F0;
+  }
+
+  /* Adjust image sizes for smaller screens */
+  #s img, .r img, .s img, .t img {
+    width: 100%; /* Make images take full width of their container */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between image and text */
+  }
+
+  /* Adjust text styles for smaller screens */
+  #s h3, .r h3, .s h3, .t h3 {
+    font-size: 1.2rem; /* Make the text a bit smaller */
+    margin-left: 0; /* Reset margin */
+  }
+
+  #s p, .r p, .s p, .t p {
+    font-size: 1rem; /* Adjust the paragraph text size */
+    margin-left: 0; /* Reset margin */
+  }
+
+  .sect,
+  .sec-3 {
+    width: 90%;
+  }
+
+  .sec-3 h1 {
+    font-size: 2rem;
+  }
+
+  .sec-3 p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .anything {
+    flex-direction: column;
+    width: 80%;
+    margin-left: 0;
+  }
+
+  .whatever h3 {
+    font-size: 1.5rem;
+  }
+
+  .slider .images {
+    animation: marquee 6s linear infinite;
+  }
+
+  .image-set img {
+    width: 100px;
+    margin-right: 40px;
+  }
+
+  #non img {
+    width: 80%;
+  }
+
+  footer {
+    background: #1A1E22;
+    padding-top: 80px;
+    padding-left: 20px; /* Adjust padding for smaller screens */
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction:column-reverse; /* Stack #texts and #non vertically */
+    color: #fff;
+  }
+
+  /* Stack #texts and #non vertically */
+  #texts {
+    width: 100%; /* Ensure both sections take up full width */
+    display: flex;
+  }
+
+  #non {
+width: 100%;
+flex-direction: column;
+  }
+
+  /* Adjust the logo in #non */
+  #non img {
+    width: 50%; /* Keep the logo at 50% width */
+    margin-bottom: 20px; /* Space between image and other content */
+  }
+
+  /* Ensure the bolder div aligns properly */
+  .bolder {
+    margin-top: 8rem;
+    display: flex;
+    gap: 1rem;
+    width: 100%; /* Ensure it takes full width on smaller screens */
+  }
+
+  /* Adjust the flex direction for better alignment */
+  .bolder-2 {
+    width: 100%;
+  }
+
+  /* Make sure the .form section is aligned vertically */
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .input-box {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .input-box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+  }
+
+  /* Adjust the social media icons to fit smaller screens */
+  .bolder img {
+    width: 30px; /* Smaller icons */
+    margin-right: 15px;
+  }
+
+  /* Adjust footer text links */
+  .copywrite p,
+  .copywrite-2 p {
+    font-size: 10px; /* Smaller text for mobile */
+    display: block;
+    margin-top: 10px; /* Space between text items */
+  }
+
+  /* Hover effect for text links */
+  .copywrite p:hover,
+  .copywrite-2 p:hover {
+    text-decoration: underline;
+  }
+
+  /* Adjust section headings */
+  .why-attentive h3,
+  .products h3,
+  .Email h3,
+  .list-management h3,
+  .solution h3,
+  .BY-industries h3,
+  .By-role h3,
+  .resources h3,
+  .Company h3,
+  .partners h3,
+  .developers h3 {
+    font-size: 16px; /* Adjust font size */
+    font-weight: bolder;
+    margin-bottom: 10px; /* Space below the headings */
+  }
+
+  /* Adjust paragraph text */
+  .why-attentive p,
+  .products p,
+  .Email p,
+  .list-management p,
+  .solution p,
+  .BY-industries p,
+  .By-role p,
+  .resources p,
+  .Company p,
+  .partners p,
+  .developers p {
+    font-size: 14px; /* Keep font size consistent */
+    margin-bottom: 10px; /* Space between paragraphs */
+  }
+
+  /* Hover effect for paragraphs */
+  .why-attentive p:hover,
+  .products p:hover,
+  .Email p:hover,
+  .list-management p:hover,
+  .solution p:hover,
+  .BY-industries p:hover,
+  .By-role p:hover,
+  .resources p:hover,
+  .Company p:hover,
+  .partners p:hover,
+  .developers p:hover {
+    text-decoration: underline;
+  }
+}
+
+
+/* For larger screens (above 1024px) */
+@media (min-width: 1025px) {
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+
+  .hero-section p {
+    font-size: 1.7rem;
+  }
+
+  .input-box {
+    width: 20rem;
+  }
+
+  #btn,
+  #btn-2 {
+    width: auto;
+    padding: 10px 20px;
+  }
+
+  .slider .images {
+    animation: marquee 10s linear infinite;
+  }
+
+  .image-set img {
+    width: 150px;
+    margin-right: 60px;
+  }
+
+  .section-3 {
+    gap: 8rem;
+    flex-direction: row;
+  }
+
+  .sect {
+    width: 50%;
+  }
+
+  .sec-3 {
+    width: 40%;
+  }
+
+  .sec-3 h1 {
+    font-size: 2.8rem;
+  }
+
+  .sec-3 p {
+    font-size: 1.7rem;
+  }
+
+  .anything {
+    flex-direction: row;
+    width: 80%;
+    margin-left: 10rem;
+  }
+
+  .whatever {
+    width: 90%;
+  }
+
+  .slider {
+    margin-top: 20px;
+  }
+}
+
+/* For very large screens (above 1440px) */
+@media (min-width: 1440px) {
+  .hero-section {
+    height: 160vh;
+  }
+
+  .hero-section h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1.9rem;
+  }
+
+  .slider .images {
+    animation: marquee 15s linear infinite;
+  }
+
+  .image-set img {
+    width: 180px;
+    margin-right: 80px;
+  }
+
+  .section-3 {
+    gap: 10rem;
+    flex-direction: row;
+  }
+
+  .sect {
+    width: 50%;
+  }
+
+  .sec-3 {
+    width: 40%;
+  }
+
+  .sec-3 h1 {
+    font-size: 3rem;
+  }
+
+  .sec-3 p {
+    font-size: 1.9rem;
+  }
+
+  .anything {
+    flex-direction: row;
+    width: 90%;
+    margin-left: 15rem;
+  }
+}
